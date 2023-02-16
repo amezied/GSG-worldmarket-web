@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Main Flow" >
+    <test name="joinUsFlow" enabled="false">
+        <classes>
+            <class name="Setup"></class>
+            <class name="HomePageTest"></class>
+            <class name="JoinUsTest"></class>
+        </classes>
+    </test>
+    <test name="myStoreFlow">
+        <classes>
+            <class name="Setup"></class>
+            <class name="HomePageTest"></class>
+            <class name="MyStoreSelectionTest"></class>
+        </classes>
+    </test>
+
+</suite>
