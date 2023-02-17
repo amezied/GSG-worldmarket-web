@@ -12,9 +12,8 @@ public class HomePageTest {
 
 
     @Test(priority = 1)
-    public void verifyThatSignUpModalIsOpenedSuccessfully() {
+    public void verifyThatSignUpModalIsClosedSuccessfully() {
         Setup.wait.until(ExpectedConditions.elementToBeClickable(HomePOM.getSignUpModalCloseButton()));
         HomePOM.getSignUpModalCloseButton().click();
-
     }
 }

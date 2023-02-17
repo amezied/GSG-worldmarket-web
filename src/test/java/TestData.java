@@ -11,5 +11,8 @@ public class TestData {
          static String code="98347589437";
         // static String successMessage="شكراً لك. لقد تم الإرسال بنجاح.";
     }
+    public class SearchData{
+        static  String searchText = "sofa";
+    }
 }
 
