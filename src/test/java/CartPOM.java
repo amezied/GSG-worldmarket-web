@@ -12,7 +12,6 @@ public class CartPOM {
         return Setup.driver.findElement(By.xpath("//button[@name='Checkout']"));
     }
     public static WebElement getOrderCheckoutButton(){
-        return Setup.driver.findElement(By.xpath("//*[contains(@class,'basket-buttons')]//button"));
-                //"/html/body/div[2]/main/div[3]/div/div/div[1]/form/div[2]/div[1]/div[2]/div[2]/div/div/div[1]/button"));
+        return Setup.driver.findElement(By.xpath("//*[contains(@class,'basket-buttons')]//button/parent::*"));
     }
 }

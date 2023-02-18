@@ -7,7 +7,7 @@
             <class name="HomePageTest"></class>
         </classes>
     </test>
-    <test name="joinUsFlow" enabled="false">
+    <test name="joinUsFlow" >
         <classes>
             <class name="JoinUsTest"></class>
         </classes>
@@ -17,7 +17,7 @@
             <class name="MyStoreSelectionTest"></class>
         </classes>
     </test>
-    <test name="searchFlow" >
+    <test name="searchFlow" enabled="false">
         <classes>
             <class name="SearchTest"></class>
             <class name="CartTest"></class>

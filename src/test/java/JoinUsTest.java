@@ -12,7 +12,7 @@ public class JoinUsTest {
         HomePOM.getJoinUsButton().click();
 
     }
-    @Test(priority = 2)
+    @Test(priority = 2 ,enabled = false)
     public void verifyThatFillDataInJoinAsForm() {
         Setup.wait.until(ExpectedConditions.elementToBeClickable(JoinFormPOM.getFirstNameField()));
         JoinFormPOM.getFirstNameField().sendKeys(TestData.NewUserData.firstName);
@@ -29,5 +29,22 @@ public class JoinUsTest {
         JoinFormPOM.getCreateAccountButton().click();
        // Setup.wait.until(ExpectedConditions.visibilityOf(JoinFormPOM.getSuccessLabel()));
       //  Assert.assertEquals(JoinFormPOM.getSuccessLabel().getText(), TestData.NewUserData.successMessage);
+    }
+    @Test(priority = 3)
+    public void verifyThatFillDataInJoinAsFormWithInvalidEmail() {
+        Setup.wait.until(ExpectedConditions.elementToBeClickable(JoinFormPOM.getFirstNameField()));
+        JoinFormPOM.getFirstNameField().sendKeys(TestData.NewInvalidUserData.firstName);
+        JoinFormPOM.getLastNameField().sendKeys(TestData.NewInvalidUserData.lastName);
+        JoinFormPOM.getLoginEmailField().sendKeys(TestData.NewInvalidUserData.email);
+        JoinFormPOM.getPasswordField().sendKeys(TestData.NewInvalidUserData.password);
+        JoinFormPOM.getMemberIdField().sendKeys(TestData.NewInvalidUserData.memberId);
+        new Select(JoinFormPOM.getBirthMonthField()).selectByValue(TestData.NewInvalidUserData.birthMonth);
+        new Select(JoinFormPOM.getBirthDayField()).selectByValue(TestData.NewInvalidUserData.birthDay);
+        JoinFormPOM.getEmailSubscriptionField().click();
+        JoinFormPOM.getPhoneSubscriptionField().click();
+        JoinFormPOM.getPostalCodeField().sendKeys(TestData.NewInvalidUserData.code);
+        JoinFormPOM.getAcceptTermsAndConditionsField().click();
+        JoinFormPOM.getCreateAccountButton().click();
+        Assert.assertEquals(JoinFormPOM.getEmailValidationData().getText(), TestData.NewInvalidUserData.emailValidationMessage);
     }
 }

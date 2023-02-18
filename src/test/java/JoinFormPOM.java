@@ -42,5 +42,8 @@ public class JoinFormPOM {
     public static WebElement getCreateAccountButton(){
       return  Setup.driver.findElement(By.id("createAccountButton"));
     }
+    public static WebElement getEmailValidationData(){
+      return  Setup.driver.findElement(By.id("loginEmailCreateAccount_error"));
+    }
 
 }
