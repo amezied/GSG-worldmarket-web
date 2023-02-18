@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a5aefc62-c4d3-4d0f-8a0a-2a7f74e62ce1" name="Changes" comment="search test">
+    <list default="true" id="a5aefc62-c4d3-4d0f-8a0a-2a7f74e62ce1" name="Changes" comment="Solve Access Denied problem">
+      <change afterPath="$PROJECT_DIR$/src/test/java/CartPOM.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/CartTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomePageTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JoinFormPOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinFormPOM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/JoinUsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/JoinUsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyStoreSelectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyStoreSelectionTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/SearchPOM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchPOM.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/SearchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Setup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Setup.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestData.java" afterDir="false" />
@@ -130,14 +127,22 @@
       <option name="project" value="LOCAL" />
       <updated>1676639491371</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Solve Access Denied problem">
+      <created>1676737988512</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676737988512</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start" />
     <MESSAGE value="Home test,&#10;join us test,&#10;select store test" />
     <MESSAGE value="search test" />
-    <option name="LAST_COMMIT_MESSAGE" value="search test" />
+    <MESSAGE value="Solve Access Denied problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Solve Access Denied problem" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/GSG_worldmarket_web$D__java_file_GSG_worldmarket_web_testng_xml.ic" NAME="$PROJECT_DIR$/testng.xml Coverage Results" MODIFIED="1676711168181" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

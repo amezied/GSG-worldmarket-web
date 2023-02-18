@@ -12,4 +12,10 @@ public class SearchTest {
         Setup.driver.manage().deleteAllCookies();
         SearchPOM.getSearchButton().click();
     }
+    @Test(priority = 2)
+    public void verifyThatItemSelectedSuccessfully() {
+        Setup.wait.until(ExpectedConditions.elementToBeClickable(SearchPOM.getSearchItemLink()));
+        Setup.driver.manage().deleteAllCookies();
+        SearchPOM.getSearchItem().click();
+    }
 }

@@ -12,14 +12,15 @@
             <class name="JoinUsTest"></class>
         </classes>
     </test>
-    <test name="myStoreFlow">
+    <test name="myStoreFlow" enabled="false">
         <classes>
             <class name="MyStoreSelectionTest"></class>
         </classes>
     </test>
-    <test name="searchFlow" enabled="false">
+    <test name="searchFlow" >
         <classes>
             <class name="SearchTest"></class>
+            <class name="CartTest"></class>
         </classes>
     </test>
 </suite>

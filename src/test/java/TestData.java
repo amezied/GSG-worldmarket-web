@@ -17,5 +17,9 @@ public class TestData {
     public class SearchData{
         static  String searchText = "sofa";
     }
+    public class AddToCartData{
+        static  String itemTitle = "Noelle Graphite Woven Sofa and Ottoman";
+        static  String itemLink = "/product/graphite-woven-noelle-sofa-and-ottoman.do?sortby=ourPicks&from=Search";
+    }
 }
 
