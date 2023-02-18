@@ -4,12 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class JoinUsTest {
-    Setup baseTest= new Setup();
-
     @Test(priority = 1)
     public void verifyThatJoinUsFormIsOpenedSuccessfully() {
         Setup.wait.until(ExpectedConditions.elementToBeClickable(HomePOM.getJoinUsButton()));
         Assert.assertTrue(HomePOM.getJoinUsButton().isDisplayed());
+        Setup.driver.manage().deleteAllCookies();
         HomePOM.getJoinUsButton().click();
 
     }

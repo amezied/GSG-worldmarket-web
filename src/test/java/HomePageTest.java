@@ -8,8 +8,6 @@ import org.testng.annotations.Test;
 import static org.testng.Assert.assertTrue;
 
 public class HomePageTest {
-    Setup baseTest= new Setup();
-
 
     @Test(priority = 1)
     public void verifyThatSignUpModalIsClosedSuccessfully() {

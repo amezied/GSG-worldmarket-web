@@ -1,5 +1,4 @@
 public class TestData {
- public static String test="";
     public class NewUserData{
          static String firstName="Alaa";
          static String lastName="Mezied";
@@ -10,6 +9,10 @@ public class TestData {
          static String birthDay="2";
          static String code="98347589437";
         // static String successMessage="شكراً لك. لقد تم الإرسال بنجاح.";
+    }
+    public class MyStoreData{
+        static  String storeText = "Oakland";
+        static  String storeSelectBtnId = "19";
     }
     public class SearchData{
         static  String searchText = "sofa";

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Main Flow" >
-    <test name="closeJoinModalFlow">
+<suite name="Main Flow">
+    <test name="homeFlow">
         <classes>
             <class name="Setup"></class>
             <class name="HomePageTest"></class>
@@ -12,12 +12,12 @@
             <class name="JoinUsTest"></class>
         </classes>
     </test>
-    <test name="myStoreFlow" enabled="false">
+    <test name="myStoreFlow">
         <classes>
             <class name="MyStoreSelectionTest"></class>
         </classes>
     </test>
-    <test name="searchFlow">
+    <test name="searchFlow" enabled="false">
         <classes>
             <class name="SearchTest"></class>
         </classes>

@@ -28,16 +28,16 @@ public class JoinFormPOM {
       return  Setup.driver.findElement(By.id("birthdayDay"));
     }
     public static WebElement getEmailSubscriptionField(){
-        return  Setup.driver.findElement(By.id("createAccountEmailSubscriptionRequired"));
+        return  Setup.driver.findElement(By.xpath("//*[@id='clabel_text_messages'][@for='createAccountOptInForEmail' ]/span"));
     }
     public static WebElement getPhoneSubscriptionField(){
-      return  Setup.driver.findElement(By.id("createAccountPhoneSubscriptionRequired"));
+        return  Setup.driver.findElement(By.xpath("//*[@id='clabel_text_messages'][@for='createAccountOptInForTextMessages' ]/span"));
     }
     public static WebElement getPostalCodeField(){
         return  Setup.driver.findElement(By.id("postalCodeCreate"));
     }
     public static WebElement getAcceptTermsAndConditionsField(){
-      return  Setup.driver.findElement(By.id("createAccountTandC"));
+      return  Setup.driver.findElement(By.xpath("//*[@id='label_create_tc' ]/span"));
     }
     public static WebElement getCreateAccountButton(){
       return  Setup.driver.findElement(By.id("createAccountButton"));

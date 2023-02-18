@@ -11,17 +11,11 @@ public class HomePOM {
     public static WebElement getMyStoreButton(){
         return Setup.driver.findElementById("selectStoreDialogLink");
     }
-    public static WebElement getMyStore(){
-        return Setup.driver.findElementById("myStoreLoc");
+    public static WebElement getMyStoreModalLoaded(){
+        return Setup.driver.findElementById("storesSearchResultData");
     }
-    public static WebElement getMyStoreCheckStoreButton(){
-        return Setup.driver.findElementById("changeStore");
-    }
-    public static WebElement getMyStoreSelectOaklandStoreButton(){
-        return Setup.driver.findElementById("changePickupStoreButton_19");
-    }
-    public static String getMyStoreTextAfterSelect(){
-        return Setup.driver.findElementById("myStoreLoc").getText();
+    public static WebElement getMyStoreSelectStoreButton(){
+        return Setup.driver.findElementById("changePickupStoreButton_"+TestData.MyStoreData.storeSelectBtnId);
     }
 
 }

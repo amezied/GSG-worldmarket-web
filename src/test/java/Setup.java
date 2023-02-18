@@ -11,6 +11,7 @@ public class Setup {
 @Test
     public void setUp() {
     ChromeOptions options= new ChromeOptions();
+    options.addArguments("--disable-infobars");
     WebDriverManager.chromedriver().setup();
     driver = new ChromeDriver(options);
     wait = new WebDriverWait(driver, 60);
